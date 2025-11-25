@@ -32,6 +32,14 @@ rag-chatbot-langchain/
 │── README.md
 
 🧩 Architecture
+
+
+
+
+
+
+
+
 End-to-End Flow
 
 Document Ingestion
@@ -59,3 +67,16 @@ Retrieved context + question → LLM
 LLM produces grounded, accurate response
 
 Response streamed back to Gradio
+
+
+Build the Docker image
+
+docker build -t rag-chatbot .
+docker run -p 7860:7860 --env-file .env rag-chatbot
+
+With local vectorstore persistence
+
+docker run -p 7860:7860 \
+  --env-file .env \
+  -v $(pwd)/vectorstore:/app/vectorstore \
+  rag-chatbot
