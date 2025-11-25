@@ -51,7 +51,8 @@ ui = gr.Interface(
     fn=answer_question,
     inputs="text",
     outputs="text",
-    title="RAG Chatbot using LangChain + ChromaDB"
+    title="RAG Chatbot using LangChain + ChromaDB",
+    fill_height=True,
 )
 
 if __name__ == "__main__":
