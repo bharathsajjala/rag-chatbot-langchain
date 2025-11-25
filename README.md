@@ -35,6 +35,7 @@ rag-chatbot-langchain/
 
 
 
+<img width="1052" height="480" alt="Screenshot 2025-11-25 at 1 45 44 PM" src="https://github.com/user-attachments/assets/77aba49c-3c83-43a3-89d0-2ecd9c76124b" />
 
 
 
